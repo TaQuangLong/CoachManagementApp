@@ -4,23 +4,23 @@ import{HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactImageDetailComponent } from './contact-image-detail/contact-image-detail.component';
-import { ContactImageDetailsComponent } from './contact-image-details/contact-image-details.component';
 import { ValueComponent } from './value/value.component';
+import { NavComponent } from './nav/nav.component';
+import{AuthService} from './app/_services/AuthService';
 
 @NgModule({
    declarations: [
       AppComponent,
-      ContactImageDetailComponent,
-      ContactImageDetailsComponent,
-      ValueComponent
+      ValueComponent,
+      NavComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       HttpClientModule
    ],
-   providers: [],
+   providers: [
+      AlertService   ],
    bootstrap: [
       AppComponent
    ]
